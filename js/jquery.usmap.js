@@ -487,7 +487,7 @@
     _defaultMouseOverAction: function(stateData) {
       // hover effect
       this.bringShapeToFront(stateData.shape);
-      this.paper.safari();
+      //this.paper.safari();
       
       // ... for the state
       var attrs = {};

@@ -63,7 +63,16 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(3), __webpack_require__(4)], __WEBPACK_AMD_DEFINE_RESULT__ = function(R) {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// ┌────────────────────────────────────────────────────────────────────┐ \\
+	// │ Raphaël @@VERSION - JavaScript Vector Library                      │ \\
+	// ├────────────────────────────────────────────────────────────────────┤ \\
+	// │ Copyright © 2008-2012 Dmitry Baranovskiy (http://raphaeljs.com)    │ \\
+	// │ Copyright © 2008-2012 Sencha Labs (http://sencha.com)              │ \\
+	// ├────────────────────────────────────────────────────────────────────┤ \\
+	// │ Licensed under the MIT (http://raphaeljs.com/license.html) license.│ \\
+	// └────────────────────────────────────────────────────────────────────┘ \\
+
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(3), __webpack_require__(4)], __WEBPACK_AMD_DEFINE_RESULT__ = function(R) {
 
 	    return R;
 
@@ -73,7 +82,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2)], __WEBPACK_AMD_DEFINE_RESULT__ = function(eve) {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// ┌────────────────────────────────────────────────────────────────────┐ \\
+	// │ Raphaël @@VERSION - JavaScript Vector Library                      │ \\
+	// ├────────────────────────────────────────────────────────────────────┤ \\
+	// │ Core Module                                                        │ \\
+	// ├────────────────────────────────────────────────────────────────────┤ \\
+	// │ Licensed under the MIT (http://raphaeljs.com/license.html) license.│ \\
+	// └────────────────────────────────────────────────────────────────────┘ \\
+
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2)], __WEBPACK_AMD_DEFINE_RESULT__ = function(eve) {
 
 	    /*\
 	     * Raphael
@@ -142,7 +159,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        }
 	    }
-	    R.version = "2.2.0";
+	    R.version = "@@VERSION";
 	    R.eve = eve;
 	    var loaded,
 	        separator = /[, ]+/,
@@ -2896,7 +2913,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * Raphael.el
 	     [ property (object) ]
 	     **
-	     * You can add your own method to elements. This is useful when you want to hack default functionality or
+	     * You can add your own method to elements. This is usefull when you want to hack default functionality or
 	     * want to wrap some common transformation or attributes in one method. In difference to canvas methods,
 	     * you can redefine element method at any time. Expending element methods wouldn’t affect set.
 	     > Usage
@@ -3143,7 +3160,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * Element.data
 	     [ method ]
 	     **
-	     * Adds or retrieves given value associated with given key.
+	     * Adds or retrieves given value asociated with given key.
 	     **
 	     * See also @Element.removeData
 	     > Parameters
@@ -3252,7 +3269,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     - mcontext (object) #optional context for moving handler
 	     - scontext (object) #optional context for drag start handler
 	     - econtext (object) #optional context for drag end handler
-	     * Additionally following `drag` events will be triggered: `drag.start.<id>` on start,
+	     * Additionaly following `drag` events will be triggered: `drag.start.<id>` on start,
 	     * `drag.end.<id>` on end and `drag.move.<id>` on every move. When element will be dragged over another element
 	     * `drag.over.<id>` will be fired as well.
 	     *
@@ -5861,7 +5878,17 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_RESULT__ = function(R) {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// ┌─────────────────────────────────────────────────────────────────────┐ \\
+	// │ Raphaël @@VERSION - JavaScript Vector Library                       │ \\
+	// ├─────────────────────────────────────────────────────────────────────┤ \\
+	// │ SVG Module                                                          │ \\
+	// ├─────────────────────────────────────────────────────────────────────┤ \\
+	// │ Copyright (c) 2008-2011 Dmitry Baranovskiy (http://raphaeljs.com)   │ \\
+	// │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
+	// │ Licensed under the MIT (http://raphaeljs.com/license.html) license. │ \\
+	// └─────────────────────────────────────────────────────────────────────┘ \\
+
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_RESULT__ = function(R) {
 	    if (R && !R.svg) {
 	        return;
 	    }
@@ -7209,7 +7236,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * Paper.renderfix
 	     [ method ]
 	     **
-	     * Fixes the issue of Firefox and IE9 regarding subpixel rendering. If paper is dependent
+	     * Fixes the issue of Firefox and IE9 regarding subpixel rendering. If paper is dependant
 	     * on other elements after reflow it could shift half pixel which cause for lines to lost their crispness.
 	     * This method fixes the issue.
 	     **
@@ -7285,7 +7312,17 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_RESULT__ = function(R) {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// ┌─────────────────────────────────────────────────────────────────────┐ \\
+	// │ Raphaël @@VERSION - JavaScript Vector Library                       │ \\
+	// ├─────────────────────────────────────────────────────────────────────┤ \\
+	// │ VML Module                                                          │ \\
+	// ├─────────────────────────────────────────────────────────────────────┤ \\
+	// │ Copyright (c) 2008-2011 Dmitry Baranovskiy (http://raphaeljs.com)   │ \\
+	// │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
+	// │ Licensed under the MIT (http://raphaeljs.com/license.html) license. │ \\
+	// └─────────────────────────────────────────────────────────────────────┘ \\
+
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_RESULT__ = function(R) {
 	    if (R && !R.vml) {
 	        return;
 	    }
